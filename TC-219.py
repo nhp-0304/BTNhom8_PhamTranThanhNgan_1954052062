@@ -7,7 +7,8 @@ driver.get('https://moji.vn/')
 
 driver.set_window_size(1280,680)
 driver.find_element(By.CSS_SELECTOR, 'a').click()
-driver.find_element(By.LINK_TEXT, 'Gấu bông và gối').click()
+driver.find_element(By.LINK_TEXT, 'Trang trí').click()
+driver.find_element(By.LINK_TEXT, 'Trang trí khác').click()
 
 articles = driver.find_elements(By.CSS_SELECTOR, 'div.product-item')
 for item in articles:
