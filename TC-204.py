@@ -6,7 +6,7 @@ driver = webdriver.Chrome(executable_path='venv/chromedriver')
 driver.get('https://moji.vn/')
 
 driver.set_window_size(1280,680)
-driver.find_element(By.CSS_SELECTOR, 'a').click()
+driver.find_element(By.LINK_TEXT, 'TẤT CẢ').click()
 driver.find_element(By.LINK_TEXT, 'Du lịch').click()
 driver.find_element(By.LINK_TEXT, 'Đồ du lịch khác').click()
 
