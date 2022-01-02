@@ -1,0 +1,281 @@
+{
+  "id": "5416902e-2729-4659-8b6a-4321a4b342c6",
+  "version": "2.0",
+  "name": "TC-36",
+  "url": "https://moji.vn/",
+  "tests": [{
+    "id": "04fca93a-04bd-476c-9c28-20d043bba775",
+    "name": "TC-36",
+    "commands": [{
+      "id": "9a55265c-270c-4902-bf3d-04b45f1077a1",
+      "comment": "",
+      "command": "open",
+      "target": "https://moji.vn/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b79fcd1a-9a35-4322-92ee-7d513349d1fb",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1382x744",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a616e94f-50a4-4be1-9e9e-2b911e121003",
+      "comment": "",
+      "command": "click",
+      "target": "css=.count-cart",
+      "targets": [
+        ["css=.shopping-cart-item:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='js-rs-mini-cart']/ul/li", "xpath:idRelative"],
+        ["xpath=//div[2]/ul/li", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b2fbcc65-539a-4024-a7b0-2a14bd4cd629",
+      "comment": "",
+      "command": "click",
+      "target": "css=.count-cart-icon",
+      "targets": [
+        ["css=.shopping-cart-item:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='js-rs-mini-cart']/ul/li", "xpath:idRelative"],
+        ["xpath=//div[2]/ul/li", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7fe480cd-e823-45ce-b254-240dfd3019cd",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Xem giỏ hàng",
+      "targets": [
+        ["linkText=Xem giỏ hàng", "linkText"],
+        ["css=.btn-lg", "css:finder"],
+        ["xpath=//a[contains(text(),'Xem giỏ hàng')]", "xpath:link"],
+        ["xpath=//div[@id='js-rs-mini-cart']/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/cart')]", "xpath:href"],
+        ["xpath=//div[2]/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Xem giỏ hàng')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0e6c7b1c-84fa-465e-9cec-9350d1835697",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Thanh toán",
+      "targets": [
+        ["linkText=Thanh toán", "linkText"],
+        ["css=.btn-outline-pink", "css:finder"],
+        ["xpath=//a[contains(text(),'Thanh toán')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/cart/checkout')]", "xpath:href"],
+        ["xpath=//div[2]/a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Thanh toán')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "aafa9992-743b-4308-bf8d-42d92256eb9d",
+      "comment": "",
+      "command": "click",
+      "target": "id=customerName",
+      "targets": [
+        ["css=body", "css:finder"],
+        ["xpath=//body", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9dd4dc6c-a39c-42d8-b678-890234645c38",
+      "comment": "",
+      "command": "type",
+      "target": "id=customerName",
+      "targets": [
+        ["id=customerName", "id"],
+        ["name=customerName", "name"],
+        ["css=#customerName", "css:finder"],
+        ["xpath=//input[@id='customerName']", "xpath:attributes"],
+        ["xpath=//form[@id='formCheckOut']/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/div/input", "xpath:position"]
+      ],
+      "value": "Ngoc My"
+    }, {
+      "id": "479caa12-28a9-4ef0-998a-0a0a46f02053",
+      "comment": "",
+      "command": "click",
+      "target": "id=customerMobile",
+      "targets": [
+        ["id=customerMobile", "id"],
+        ["name=customerMobile", "name"],
+        ["css=#customerMobile", "css:finder"],
+        ["xpath=//input[@id='customerMobile']", "xpath:attributes"],
+        ["xpath=//form[@id='formCheckOut']/div/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a609d75a-b5d1-44d4-a676-46a716b31197",
+      "comment": "",
+      "command": "type",
+      "target": "id=customerMobile",
+      "targets": [
+        ["id=customerMobile", "id"],
+        ["name=customerMobile", "name"],
+        ["css=#customerMobile", "css:finder"],
+        ["xpath=//input[@id='customerMobile']", "xpath:attributes"],
+        ["xpath=//form[@id='formCheckOut']/div/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "12345678901"
+    }, {
+      "id": "82d02163-3086-4b5b-8675-825ce69ab34c",
+      "comment": "",
+      "command": "click",
+      "target": "id=customerEmail",
+      "targets": [
+        ["css=body", "css:finder"],
+        ["xpath=//body", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "980a9aac-f3f3-4c93-b61c-0d40e3f58889",
+      "comment": "",
+      "command": "type",
+      "target": "id=customerEmail",
+      "targets": [
+        ["id=customerEmail", "id"],
+        ["name=customerEmail", "name"],
+        ["css=#customerEmail", "css:finder"],
+        ["xpath=//input[@id='customerEmail']", "xpath:attributes"],
+        ["xpath=//form[@id='formCheckOut']/div/div/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6408ae19-b812-40b1-81e7-332a0e0aa8b5",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "id=customerEmail",
+      "targets": [],
+      "value": "Trường này bắt buộc"
+    }, {
+      "id": "cc3621a7-fc82-43af-b5d3-950052869745",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "id=customerEmail",
+      "targets": [],
+      "value": "Địa chỉ thư điện tử sai"
+    }, {
+      "id": "fc18317b-6118-4a2a-a9bf-9f789faac899",
+      "comment": "",
+      "command": "click",
+      "target": "id=customerAddress",
+      "targets": [
+        ["id=customerAddress", "id"],
+        ["name=customerAddress", "name"],
+        ["css=#customerAddress", "css:finder"],
+        ["xpath=//input[@id='customerAddress']", "xpath:attributes"],
+        ["xpath=//form[@id='formCheckOut']/div/div/div[4]/input", "xpath:idRelative"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c871de31-310a-43f4-8ebe-e64d50bba392",
+      "comment": "",
+      "command": "type",
+      "target": "id=customerAddress",
+      "targets": [
+        ["id=customerAddress", "id"],
+        ["name=customerAddress", "name"],
+        ["css=#customerAddress", "css:finder"],
+        ["xpath=//input[@id='customerAddress']", "xpath:attributes"],
+        ["xpath=//form[@id='formCheckOut']/div/div/div[4]/input", "xpath:idRelative"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": "371 Nguyễn Kiệm"
+    }, {
+      "id": "d9fb19cc-1379-4378-9b60-81f3903cae10",
+      "comment": "",
+      "command": "click",
+      "target": "id=customerCityId",
+      "targets": [
+        ["id=customerCityId", "id"],
+        ["name=customerCityId", "name"],
+        ["css=#customerCityId", "css:finder"],
+        ["xpath=//select[@id='customerCityId']", "xpath:attributes"],
+        ["xpath=//form[@id='formCheckOut']/div/div/div[5]/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5a058710-ca84-428c-a825-5ab8e6c61f2e",
+      "comment": "",
+      "command": "select",
+      "target": "id=customerCityId",
+      "targets": [],
+      "value": "label=Hồ Chí Minh"
+    }, {
+      "id": "d9c532a6-7892-48c5-8bf9-84ec62317aa0",
+      "comment": "",
+      "command": "click",
+      "target": "id=customerDistrictId",
+      "targets": [
+        ["id=customerDistrictId", "id"],
+        ["name=customerDistrictId", "name"],
+        ["css=#customerDistrictId", "css:finder"],
+        ["xpath=//select[@id='customerDistrictId']", "xpath:attributes"],
+        ["xpath=//form[@id='formCheckOut']/div/div/div[6]/select", "xpath:idRelative"],
+        ["xpath=//div[6]/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "66b4d330-87a7-4aca-b43b-23efb4edc8c4",
+      "comment": "",
+      "command": "select",
+      "target": "id=customerDistrictId",
+      "targets": [],
+      "value": "label=Quận Gò Vấp"
+    }, {
+      "id": "1dc486a7-6ab6-41de-9f25-55c1086a024e",
+      "comment": "",
+      "command": "click",
+      "target": "id=description",
+      "targets": [
+        ["id=description", "id"],
+        ["name=description", "name"],
+        ["css=#description", "css:finder"],
+        ["xpath=//textarea[@id='description']", "xpath:attributes"],
+        ["xpath=//form[@id='formCheckOut']/div/div/div[7]/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "919a8026-ab3a-4015-9d59-a858d7fd3d29",
+      "comment": "",
+      "command": "type",
+      "target": "id=description",
+      "targets": [
+        ["id=customerEmail", "id"],
+        ["name=customerEmail", "name"],
+        ["css=#customerEmail", "css:finder"],
+        ["xpath=//input[@id='customerEmail']", "xpath:attributes"],
+        ["xpath=//form[@id='formCheckOut']/div/div/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "Giao buổi trưa"
+    }, {
+      "id": "770b7155-c93a-45c6-a76e-6e3341fcce4c",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "07a9007d-d6e8-4524-961b-86335794f3c9",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["04fca93a-04bd-476c-9c28-20d043bba775"]
+  }],
+  "urls": ["https://moji.vn/"],
+  "plugins": []
+}
