@@ -1,0 +1,212 @@
+{
+  "id": "313d70cf-e072-4f77-bbc9-c325cd269985",
+  "version": "2.0",
+  "name": "test",
+  "url": "https://moji.vn",
+  "tests": [{
+    "id": "a5a23b3f-bd4d-4d60-82a7-2128cf65588f",
+    "name": "TC-14.1",
+    "commands": [{
+      "id": "84719b70-9142-4e67-942f-140b314df509",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "acc49cca-fd20-4eb7-9215-acc8f00e6ec8",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1050x708",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e3f38b2f-c0a8-48d1-81ec-b5124ce02875",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Ka Kim Ánh |",
+      "targets": [
+        ["linkText=Ka Kim Ánh |", "linkText"],
+        ["css=.header-user > li:nth-child(1) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Ka Kim Ánh |')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/profile')]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Ka Kim Ánh |')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "63398b7f-c428-4102-8e76-48cae70bcf37",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Đổi mật khẩu",
+      "targets": [
+        ["linkText=Đổi mật khẩu", "linkText"],
+        ["css=.text-left > li:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Đổi mật khẩu')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/profile/changepassword')]", "xpath:href"],
+        ["xpath=//div[2]/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Đổi mật khẩu')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "53d8dba6-4278-4aac-97a6-1f3b163a1ea4",
+      "comment": "",
+      "command": "click",
+      "target": "id=oldpassword",
+      "targets": [
+        ["id=oldpassword", "id"],
+        ["name=oldpassword", "name"],
+        ["css=#oldpassword", "css:finder"],
+        ["xpath=//input[@id='oldpassword']", "xpath:attributes"],
+        ["xpath=//form[@id='formAcount']/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7d99369f-e33c-4bff-9df5-9958098a2dc1",
+      "comment": "",
+      "command": "type",
+      "target": "id=oldpassword",
+      "targets": [
+        ["id=oldpassword", "id"],
+        ["name=oldpassword", "name"],
+        ["css=#oldpassword", "css:finder"],
+        ["xpath=//input[@id='oldpassword']", "xpath:attributes"],
+        ["xpath=//form[@id='formAcount']/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/div/input", "xpath:position"]
+      ],
+      "value": "anh789"
+    }, {
+      "id": "893ed35f-675c-4b1b-8e3e-c2db8d997ece",
+      "comment": "",
+      "command": "click",
+      "target": "id=newpassword",
+      "targets": [
+        ["id=newpassword", "id"],
+        ["name=newpassword", "name"],
+        ["css=#newpassword", "css:finder"],
+        ["xpath=//input[@id='newpassword']", "xpath:attributes"],
+        ["xpath=//form[@id='formAcount']/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b2e3f136-baf6-48a3-a430-2d19cdb47398",
+      "comment": "",
+      "command": "type",
+      "target": "id=newpassword",
+      "targets": [
+        ["id=newpassword", "id"],
+        ["name=newpassword", "name"],
+        ["css=#newpassword", "css:finder"],
+        ["xpath=//input[@id='newpassword']", "xpath:attributes"],
+        ["xpath=//form[@id='formAcount']/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": "anh89"
+    }, {
+      "id": "57b707d5-ac74-4413-86ea-92f8fbfa8f30",
+      "comment": "",
+      "command": "click",
+      "target": "id=repassword",
+      "targets": [
+        ["id=repassword", "id"],
+        ["name=repassword", "name"],
+        ["css=#repassword", "css:finder"],
+        ["xpath=//input[@id='repassword']", "xpath:attributes"],
+        ["xpath=//form[@id='formAcount']/div[3]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6d8fd639-baf6-4668-8b3d-6bbe9f321e91",
+      "comment": "",
+      "command": "type",
+      "target": "id=repassword",
+      "targets": [
+        ["id=repassword", "id"],
+        ["name=repassword", "name"],
+        ["css=#repassword", "css:finder"],
+        ["xpath=//input[@id='repassword']", "xpath:attributes"],
+        ["xpath=//form[@id='formAcount']/div[3]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/input", "xpath:position"]
+      ],
+      "value": "anh89"
+    }, {
+      "id": "04176524-f9b5-4836-8e12-76f9664fd3ae",
+      "comment": "",
+      "command": "click",
+      "target": "id=formAcount",
+      "targets": [
+        ["id=formAcount", "id"],
+        ["css=#formAcount", "css:finder"],
+        ["xpath=//form[@id='formAcount']", "xpath:attributes"],
+        ["xpath=//div/div[2]/div/form", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3f41ea79-a5ab-42aa-b01f-2ee177e6d568",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.col-lg-6 > .btn",
+      "targets": [
+        ["css=.col-lg-6 > .btn", "css:finder"],
+        ["xpath=(//button[@type='submit'])[3]", "xpath:attributes"],
+        ["xpath=//form[@id='formAcount']/div[4]/div/div/button", "xpath:idRelative"],
+        ["xpath=//div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Xác nhận')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2c21b6c6-67d1-4975-a89f-1c230d3f7056",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-lg-6 > .btn",
+      "targets": [
+        ["css=.col-lg-6 > .btn", "css:finder"],
+        ["xpath=(//button[@type='submit'])[3]", "xpath:attributes"],
+        ["xpath=//form[@id='formAcount']/div[4]/div/div/button", "xpath:idRelative"],
+        ["xpath=//div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Xác nhận')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "bbcb5404-89f0-4895-a305-3e5981db0d33",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.col-lg-6 > .btn",
+      "targets": [
+        ["css=.col-lg-6 > .btn", "css:finder"],
+        ["xpath=(//button[@type='submit'])[3]", "xpath:attributes"],
+        ["xpath=//form[@id='formAcount']/div[4]/div/div/button", "xpath:idRelative"],
+        ["xpath=//div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Xác nhận')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a62d44c6-efb4-405a-994c-05550c0505a1",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,344)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "26b09364-48dd-4dc9-8518-363986c18043",
+      "comment": "",
+      "command": "assertText",
+      "target": "id=newpassword",
+      "targets": [],
+      "value": "*Tối thiểu 6 số ký tự cho phép"
+    }]
+  }],
+  "suites": [{
+    "id": "a452a7f2-f0c1-4cac-ba04-e5d89081dac4",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["https://moji.vn/"],
+  "plugins": []
+}
