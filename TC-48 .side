@@ -1,0 +1,210 @@
+{
+  "id": "f6fb34e8-67da-48e7-a6f1-0eeb62d0479d",
+  "version": "2.0",
+  "name": "test đổi mk ",
+  "url": "https://moji.vn",
+  "tests": [{
+    "id": "986401e1-101c-4122-9b32-5abec55cf348",
+    "name": "TC-48",
+    "commands": [{
+      "id": "7b330607-fb18-4a1c-8efe-361af338ba7a",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "43b3bcd6-7540-431a-b479-497d5bdd7972",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1296x696",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "43c7c570-40c1-484e-9e45-9a1f09b3a9c1",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Đăng nhập |",
+      "targets": [
+        ["linkText=Đăng nhập |", "linkText"],
+        ["css=.header-user > li:nth-child(1) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Đăng nhập |')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/user/signin')]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Đăng nhập |')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "95cabb10-c9a8-44b4-a410-9464f081acde",
+      "comment": "",
+      "command": "click",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//form[@id='formAcount']/div/input", "xpath:idRelative"],
+        ["xpath=//main/div/form/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "22d71e00-fd1f-490f-aed3-6fe27dff70fe",
+      "comment": "",
+      "command": "type",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//form[@id='formAcount']/div/input", "xpath:idRelative"],
+        ["xpath=//main/div/form/div/input", "xpath:position"]
+      ],
+      "value": "trangduong1501@gmail.com"
+    }, {
+      "id": "57b1b362-bee5-403d-a159-c7e22ed9eba0",
+      "comment": "",
+      "command": "click",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//form[@id='formAcount']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0271e595-0afe-4ebd-8ad4-49f7282d2233",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//form[@id='formAcount']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "ktpmim91"
+    }, {
+      "id": "d46ded01-d972-4262-a17e-c63f7c62b11a",
+      "comment": "",
+      "command": "click",
+      "target": "id=btnsignin",
+      "targets": [
+        ["id=btnsignin", "id"],
+        ["css=#btnsignin", "css:finder"],
+        ["xpath=//button[@id='btnsignin']", "xpath:attributes"],
+        ["xpath=//form[@id='formAcount']/div[3]/button", "xpath:idRelative"],
+        ["xpath=//div[3]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cf6821ee-d45c-4714-9eca-13334bc984c7",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=KTPM |",
+      "targets": [
+        ["linkText=KTPM |", "linkText"],
+        ["css=.header-user > li:nth-child(1) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'KTPM |')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/profile')]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'KTPM |')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4ba265ed-0987-4051-90b7-4b5775ad135c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.form-group:nth-child(1) > .row",
+      "targets": [
+        ["css=.form-group:nth-child(1) > .row", "css:finder"],
+        ["xpath=//form[@id='formAcount']/div/div", "xpath:idRelative"],
+        ["xpath=//form/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ca0d1402-051e-4b7f-b285-f6211e88f379",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.col-lg-6 > .btn",
+      "targets": [
+        ["css=.col-lg-6 > .btn", "css:finder"],
+        ["xpath=(//button[@type='submit'])[3]", "xpath:attributes"],
+        ["xpath=//form[@id='formAcount']/div[8]/div/div/button", "xpath:idRelative"],
+        ["xpath=//div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Cập nhật')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "11713d8c-2b7d-44b6-baf8-cc341df1a7c8",
+      "comment": "",
+      "command": "type",
+      "target": "id=fullName",
+      "targets": [
+        ["id=fullName", "id"],
+        ["name=fullName", "name"],
+        ["css=#fullName", "css:finder"],
+        ["xpath=//input[@id='fullName']", "xpath:attributes"],
+        ["xpath=//form[@id='formAcount']/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/div/input", "xpath:position"]
+      ],
+      "value": "Min"
+    }, {
+      "id": "c5b26983-565d-4db1-bd10-77fddaf26163",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-lg-6 > .btn",
+      "targets": [
+        ["css=.col-lg-6 > .btn", "css:finder"],
+        ["xpath=(//button[@type='submit'])[3]", "xpath:attributes"],
+        ["xpath=//form[@id='formAcount']/div[8]/div/div/button", "xpath:idRelative"],
+        ["xpath=//div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Cập nhật')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a900d0a0-db5a-472a-9d75-11a9a794a7c5",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.col-lg-6 > .btn",
+      "targets": [
+        ["css=.col-lg-6 > .btn", "css:finder"],
+        ["xpath=(//button[@type='submit'])[3]", "xpath:attributes"],
+        ["xpath=//form[@id='formAcount']/div[8]/div/div/button", "xpath:idRelative"],
+        ["xpath=//div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Cập nhật')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7caf4deb-c83c-4b86-af29-1cac593fe985",
+      "comment": "",
+      "command": "assertText",
+      "target": "id=fullName",
+      "targets": [
+        ["id=fullName", "id"],
+        ["name=fullName", "name"],
+        ["css=#fullName", "css:finder"],
+        ["xpath=//input[@id='fullName']", "xpath:attributes"],
+        ["xpath=//form[@id='formAcount']/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/div/input", "xpath:position"]
+      ],
+      "value": "Trường này bắt buộc"
+    }]
+  }],
+  "suites": [{
+    "id": "2d22d2bf-53cd-4cbf-bf52-70d745248583",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["986401e1-101c-4122-9b32-5abec55cf348"]
+  }],
+  "urls": ["https://moji.vn/"],
+  "plugins": []
+}
