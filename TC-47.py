@@ -18,7 +18,6 @@ time.sleep(1)
 try:
     driver.find_element(By.XPATH, '/html/body/header/div[2]/div[1]/div/div[3]/div/ul/li[1]/a').click()
     driver.find_element(By.NAME, 'fullName').clear()
-    driver.find_element(By.NAME, 'fullName').send_keys('Min')
     driver.find_element(By.CLASS_NAME, 'btn btn-pink').click()
 except NoSuchElementException:
     pass

@@ -3,7 +3,6 @@ import time
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import Select
-from selenium.common.exceptions import NoSuchElementException
 
 driver = webdriver.Chrome(executable_path='venv/chromedriver')
 driver.get('https://moji.vn/')
@@ -16,13 +15,7 @@ driver.find_element(By.NAME, 'password').send_keys('ktpmim91')
 driver.find_element(By.CSS_SELECTOR, '#btnsignin').click()
 time.sleep(1)
 
-try:
-    driver.find_element(By.XPATH, '/html/body/header/div[2]/div[1]/div/div[3]/div/ul/li[1]/a').click()
-    driver.find_element(By.NAME, 'fullName').clear()
-    driver.find_element(By.NAME, 'fullName').send_keys('Minh Trang')
-    driver.find_element(By.CLASS_NAME, 'btn btn-pink').click()
-except NoSuchElementException:
-    pass
+driver.find_element(By.XPATH, '/html/body/header/div[2]/div[1]/div/div[3]/div/ul/li[1]/a').click()
 
 profile = driver.find_elements(By.CSS_SELECTOR, 'div.col-md-9.col-sm-12 header')
 for p in profile:
