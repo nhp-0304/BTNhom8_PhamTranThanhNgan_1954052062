@@ -6,9 +6,10 @@ from selenium.webdriver.common.by import By
 from selenium.common.exceptions import NoSuchElementException
 driver = webdriver.Chrome(executable_path='venv/chromedriver.exe')
 driver.get('https://moji.vn/')
-driver.set_window_size(1280, 680)
+driver.set_window_size(1296, 696)
 driver.find_element(By.NAME, "q").click()
-driver.find_element(By.NAME, "q").send_keys("TÚI")
+driver.find_element(By.NAME, "q").send_keys("túi")
+driver.implicitly_wait(8)
 driver.find_element(By.CSS_SELECTOR, ".head-col-center .fa").click()
 articles = driver.find_elements(By.CSS_SELECTOR, 'div.product-item')
 for item in articles:
@@ -20,8 +21,6 @@ for item in articles:
         print('__________')
     except NoSuchElementException:
         pass
-
-
 
 time.sleep(2)
 driver.quit()

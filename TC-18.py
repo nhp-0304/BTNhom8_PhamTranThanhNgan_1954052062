@@ -1,15 +1,15 @@
+import time
+
 import driver as driver
 from selenium import webdriver
 from selenium.webdriver.common.by import By
-from selenium.webdriver.common.keys import Keys
 from selenium.common.exceptions import NoSuchElementException
-import time
 driver = webdriver.Chrome(executable_path='venv/chromedriver.exe')
 driver.get('https://moji.vn/')
-driver.set_window_size(1296, 696)
+driver.set_window_size(1280, 680)
 driver.find_element(By.NAME, "q").click()
-driver.find_element(By.NAME, "q").send_keys("thước")
-driver.find_element(By.NAME, "q").send_keys(Keys.ENTER)
+driver.find_element(By.NAME, "q").send_keys("TÚI")
+driver.find_element(By.CSS_SELECTOR, ".head-col-center .fa").click()
 articles = driver.find_elements(By.CSS_SELECTOR, 'div.product-item')
 for item in articles:
     try:
@@ -20,6 +20,8 @@ for item in articles:
         print('__________')
     except NoSuchElementException:
         pass
+
+
 
 time.sleep(2)
 driver.quit()
