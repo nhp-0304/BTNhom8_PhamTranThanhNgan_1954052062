@@ -1,7 +1,6 @@
 import time
 
 from selenium import webdriver
-from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.common.by import By
 
 driver = webdriver.Chrome(executable_path='venv/chromedriver')
@@ -22,16 +21,14 @@ driver.find_element(By.ID, 'addToCart').click()
 time.sleep(5)
 driver.find_element(By.CSS_SELECTOR, '#modalAbandoned > div > div > div.modal-body > button').click()
 
-
-
 driver.find_element(By.CSS_SELECTOR, ".count-cart").click()
 driver.find_element(By.CSS_SELECTOR, ".count-cart-icon").click()
 driver.find_element(By.LINK_TEXT, "Xem giỏ hàng").click()
 driver.find_element(By.LINK_TEXT, "Thanh toán").click()
 
-driver.find_element(By.ID, "customerEmail").clear()
-driver.find_element(By.ID, "customerEmail").click()
-driver.find_element(By.ID, "customerEmail").send_keys("12345my")
+driver.find_element(By.ID, "customerMobile").clear()
+driver.find_element(By.ID, "customerMobile").click()
+driver.find_element(By.ID, "customerMobile").send_keys("11234yu")
 time.sleep(3)
 
 error = driver.find_element(By.CLASS_NAME, "formErrorContent")

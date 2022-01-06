@@ -1,51 +1,49 @@
 {
-  "id": "604fac2b-8a2f-4178-8e76-6fa0a233c5c3",
+  "id": "741653f1-05ff-4806-a5e4-28413b347ceb",
   "version": "2.0",
-  "name": "TC-32",
+  "name": "TC-33",
   "url": "https://moji.vn/",
   "tests": [{
-    "id": "7e775071-a6ce-4d73-8e96-0105558111e4",
-    "name": "TC -32",
+    "id": "29c76c27-b24e-482b-bc46-4d10ba8d0d9b",
+    "name": "TC-33",
     "commands": [{
-      "id": "25cd5fd5-b83c-4c10-adfb-e47d332d82a9",
+      "id": "f2c680b3-a014-48e2-bbb2-c1e7fcdfaacc",
       "comment": "",
       "command": "open",
       "target": "https://moji.vn/",
       "targets": [],
       "value": ""
     }, {
-      "id": "c155fee0-56e4-4870-b106-52ae70167cae",
+      "id": "06e348b7-2f16-482e-af42-86280efd1c48",
       "comment": "",
       "command": "setWindowSize",
       "target": "1382x744",
       "targets": [],
       "value": ""
     }, {
-      "id": "c957f8a8-b486-4e58-88b5-57ee2e1d0155",
+      "id": "419bac3b-84cd-401e-bdcc-1e1bb00c303b",
       "comment": "",
       "command": "click",
       "target": "css=.count-cart",
       "targets": [
-        ["id=js-rs-mini-cart", "id"],
-        ["css=#js-rs-mini-cart", "css:finder"],
-        ["xpath=//div[@id='js-rs-mini-cart']", "xpath:attributes"],
-        ["xpath=//div[3]/div/div/div[2]", "xpath:position"]
+        ["css=.shopping-cart-item:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='js-rs-mini-cart']/ul/li", "xpath:idRelative"],
+        ["xpath=//div[2]/ul/li", "xpath:position"]
       ],
       "value": ""
     }, {
-      "id": "c23b7a41-3c74-456b-ab61-2874e01d532e",
+      "id": "af2fb859-ef8a-4f7a-829b-961e08a98a24",
       "comment": "",
       "command": "click",
       "target": "css=.count-cart-icon",
       "targets": [
-        ["id=js-rs-mini-cart", "id"],
-        ["css=#js-rs-mini-cart", "css:finder"],
-        ["xpath=//div[@id='js-rs-mini-cart']", "xpath:attributes"],
-        ["xpath=//div[3]/div/div/div[2]", "xpath:position"]
+        ["css=.shopping-cart-item:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='js-rs-mini-cart']/ul/li", "xpath:idRelative"],
+        ["xpath=//div[2]/ul/li", "xpath:position"]
       ],
       "value": ""
     }, {
-      "id": "4d5df5fb-2b2c-4099-9606-c0f6fdb0ffa2",
+      "id": "a7829d69-68de-4d3d-8c9f-2d5ed8c29289",
       "comment": "",
       "command": "click",
       "target": "linkText=Xem giỏ hàng",
@@ -60,7 +58,7 @@
       ],
       "value": ""
     }, {
-      "id": "81091c2c-3208-4e39-901f-fe97ade0ae41",
+      "id": "b03bb568-892a-4da9-955e-a7181f149463",
       "comment": "",
       "command": "click",
       "target": "linkText=Thanh toán",
@@ -74,18 +72,17 @@
       ],
       "value": ""
     }, {
-      "id": "b56c8bd8-5c8d-4f8e-9d6f-35231f154bc2",
+      "id": "318867b4-7c7d-4ba1-9ae7-8e4e865ad738",
       "comment": "",
       "command": "click",
       "target": "id=customerName",
       "targets": [
-        ["css=.col-left", "css:finder"],
-        ["xpath=//form[@id='formCheckOut']/div/div", "xpath:idRelative"],
-        ["xpath=//form/div/div", "xpath:position"]
+        ["css=body", "css:finder"],
+        ["xpath=//body", "xpath:position"]
       ],
       "value": ""
     }, {
-      "id": "cf979f05-76a7-4669-b3dc-9d91d8f8b74f",
+      "id": "9852656d-2d51-420f-8d79-b859fe60999c",
       "comment": "",
       "command": "type",
       "target": "id=customerName",
@@ -99,7 +96,7 @@
       ],
       "value": "Ngoc My"
     }, {
-      "id": "baca4830-67a3-4764-8898-968fa72151aa",
+      "id": "bba669a6-963f-4c2f-988a-9704917ec43e",
       "comment": "",
       "command": "click",
       "target": "id=customerMobile",
@@ -113,7 +110,7 @@
       ],
       "value": ""
     }, {
-      "id": "b4bc2195-159d-4b89-b0eb-d03a9a97cfc1",
+      "id": "be9de3b9-6634-4362-b716-709c7e6bde05",
       "comment": "",
       "command": "type",
       "target": "id=customerMobile",
@@ -125,26 +122,23 @@
         ["xpath=//form[@id='formCheckOut']/div/div/div[2]/input", "xpath:idRelative"],
         ["xpath=//div[2]/input", "xpath:position"]
       ],
-      "value": "12345"
+      "value": "12345678901234"
     }, {
-      "id": "359838a0-8674-4d03-8507-46a1e3fb8d87",
+      "id": "79375eaf-91c6-46c1-8913-d18f0de61c1c",
       "comment": "",
       "command": "verifyElementNotPresent",
       "target": "id=customerMobile",
       "targets": [],
       "value": "Số điện thoại sai"
     }, {
-      "id": "e9afb443-88f2-4047-aa58-244240a93cc2",
+      "id": "22d9dd44-b270-4da2-914d-e96c2d54f2b6",
       "comment": "",
       "command": "click",
       "target": "id=customerEmail",
-      "targets": [
-        ["css=body", "css:finder"],
-        ["xpath=//body", "xpath:position"]
-      ],
+      "targets": [],
       "value": ""
     }, {
-      "id": "b21f5d3a-757a-47ed-8125-095167d76b31",
+      "id": "3219b4d7-441e-4ec4-9f51-41a404052787",
       "comment": "",
       "command": "type",
       "target": "id=customerEmail",
@@ -158,7 +152,7 @@
       ],
       "value": "12345my@gmail.com"
     }, {
-      "id": "1b3befec-a3d0-4846-bb9f-fc811cdeeeec",
+      "id": "ab23b0e1-0852-406a-a9eb-d73c9347b1b3",
       "comment": "",
       "command": "click",
       "target": "id=customerAddress",
@@ -172,7 +166,7 @@
       ],
       "value": ""
     }, {
-      "id": "89624c91-5f6a-4f60-816a-a06ad4b6925b",
+      "id": "24b1c255-e0cc-40e0-9f46-95c4028a9d95",
       "comment": "",
       "command": "type",
       "target": "id=customerAddress",
@@ -186,7 +180,7 @@
       ],
       "value": "371 Nguyễn Kiệm"
     }, {
-      "id": "cb45fc14-d14c-46b9-996c-ef2e3add05cc",
+      "id": "d92a1f19-e650-4527-b826-a7059a3fcdd9",
       "comment": "",
       "command": "click",
       "target": "id=customerCityId",
@@ -200,14 +194,14 @@
       ],
       "value": ""
     }, {
-      "id": "c8e454ca-c6ce-431b-8bf8-4d9136bf1f57",
+      "id": "8c3e6198-cf11-4774-8037-8eba6e5f3560",
       "comment": "",
       "command": "select",
       "target": "id=customerCityId",
       "targets": [],
       "value": "label=Hồ Chí Minh"
     }, {
-      "id": "1d3a2182-e101-449f-8ae8-491424ecb231",
+      "id": "5cb3ebda-de9b-44d2-a34c-e2dc32b97516",
       "comment": "",
       "command": "click",
       "target": "id=customerDistrictId",
@@ -221,14 +215,14 @@
       ],
       "value": ""
     }, {
-      "id": "4c8a7390-7271-409c-8d2c-15176f44aeba",
+      "id": "b04cf043-05f1-412f-bc9b-1e5ae537dadf",
       "comment": "",
       "command": "select",
       "target": "id=customerDistrictId",
       "targets": [],
       "value": "label=Quận Gò Vấp"
     }, {
-      "id": "e62a83f1-b7ff-4bc9-8e9f-65e8c5efb276",
+      "id": "7d1c1e82-9e26-4b6d-9bc6-b342b05c3205",
       "comment": "",
       "command": "click",
       "target": "id=description",
@@ -242,21 +236,21 @@
       ],
       "value": ""
     }, {
-      "id": "fca5bf80-8d50-4e94-819c-6c90ba9db1f0",
+      "id": "dee6b887-8c2d-4c08-8611-cd7473b1251b",
       "comment": "",
       "command": "type",
       "target": "id=description",
       "targets": [
-        ["id=description", "id"],
-        ["name=description", "name"],
-        ["css=#description", "css:finder"],
-        ["xpath=//textarea[@id='description']", "xpath:attributes"],
-        ["xpath=//form[@id='formCheckOut']/div/div/div[7]/textarea", "xpath:idRelative"],
-        ["xpath=//textarea", "xpath:position"]
+        ["id=customerAddress", "id"],
+        ["name=customerAddress", "name"],
+        ["css=#customerAddress", "css:finder"],
+        ["xpath=//input[@id='customerAddress']", "xpath:attributes"],
+        ["xpath=//form[@id='formCheckOut']/div/div/div[4]/input", "xpath:idRelative"],
+        ["xpath=//div[4]/input", "xpath:position"]
       ],
       "value": "Giao buổi trưa"
     }, {
-      "id": "bce9f5bb-f7ee-463e-8360-2224df5279a5",
+      "id": "f5edee2c-a92f-45d1-b6f4-fed6fdd80128",
       "comment": "",
       "command": "close",
       "target": "",
@@ -265,12 +259,12 @@
     }]
   }],
   "suites": [{
-    "id": "1619b5b4-eea1-48ca-a596-e44d6f05e241",
+    "id": "b7af9850-5716-4377-b72d-56ca69f0b506",
     "name": "Default Suite",
     "persistSession": false,
     "parallel": false,
     "timeout": 300,
-    "tests": ["7e775071-a6ce-4d73-8e96-0105558111e4"]
+    "tests": ["29c76c27-b24e-482b-bc46-4d10ba8d0d9b"]
   }],
   "urls": ["https://moji.vn/"],
   "plugins": []
