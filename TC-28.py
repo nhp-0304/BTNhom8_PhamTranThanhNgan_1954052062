@@ -23,18 +23,12 @@ try:
     driver.implicitly_wait(3)
     a = driver.find_element(By.XPATH, '/html/body/header/div[2]/div[1]/div/div[3]/div/div/div[1]')
     driver.execute_script("arguments[0].click();", a)
-    b = driver.find_element(By.XPATH, '//*[@id="js-rs-mini-cart"]/div/a')
+    b = driver.find_element(By.CLASS_NAME, 'js-remove-item')
     driver.execute_script("arguments[0].click();", b)
-    time.sleep(1)
-    d = driver.find_element(By.XPATH, '/html/body/div[1]/div/div[1]/table/tbody/tr[1]/td[6]/a')
-    driver.execute_script("arguments[0].click();", d)
     c = driver.switch_to.alert
-    if c.text == '':
-        print('Failed')
-    else:
-        print(c.text)
+    print(c.text)
     driver.switch_to.alert.accept()
 except NoSuchElementException:
-    pass
+    print('Failed')
 
 driver.quit()
