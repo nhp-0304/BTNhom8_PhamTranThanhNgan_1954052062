@@ -1,0 +1,132 @@
+{
+  "id": "7687e402-e18a-4e12-9377-fbcc6fd61162",
+  "version": "2.0",
+  "name": "TC-26",
+  "url": "https://moji.vn/",
+  "tests": [{
+    "id": "2c93e129-b7d0-497a-96ce-f66cc8936f49",
+    "name": "TC-26",
+    "commands": [{
+      "id": "f40f38bf-c9a9-449f-bbde-e538e37663d8",
+      "comment": "",
+      "command": "open",
+      "target": "https://moji.vn/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d50ab8be-9b24-4652-b0e0-29487dc6d4b3",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1382x744",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e3a17879-3d7f-41a2-9375-11e527fb6190",
+      "comment": "",
+      "command": "click",
+      "target": "css=.count-cart",
+      "targets": [
+        ["css=.shopping-cart-item:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='js-rs-mini-cart']/ul/li", "xpath:idRelative"],
+        ["xpath=//div[2]/ul/li", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fdae8034-5553-49e1-a476-a796ea4b5e0c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.count-cart-icon",
+      "targets": [
+        ["css=.shopping-cart-item:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='js-rs-mini-cart']/ul/li", "xpath:idRelative"],
+        ["xpath=//div[2]/ul/li", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "156b9e1c-c799-4a2d-8ecf-8be73c800ab9",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Xem giỏ hàng",
+      "targets": [
+        ["linkText=Xem giỏ hàng", "linkText"],
+        ["css=.btn-lg", "css:finder"],
+        ["xpath=//a[contains(text(),'Xem giỏ hàng')]", "xpath:link"],
+        ["xpath=//div[@id='js-rs-mini-cart']/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/cart')]", "xpath:href"],
+        ["xpath=//div[2]/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Xem giỏ hàng')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8cf8d233-faf2-4078-b130-32fb8078afd0",
+      "comment": "",
+      "command": "click",
+      "target": "css=.cart-item:nth-child(1) > .text-center > .blk-qty > .updateCart",
+      "targets": [
+        ["css=.cart-item:nth-child(1) > .text-center > .blk-qty > .updateCart", "css:finder"],
+        ["xpath=(//input[@value='3'])[2]", "xpath:attributes"],
+        ["xpath=//td[4]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2a8d9310-b8da-4cda-9764-8443200ada52",
+      "comment": "",
+      "command": "pause",
+      "target": "2000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4478314f-c8b6-43e2-a42f-1c8ffb6fc91f",
+      "comment": "",
+      "command": "type",
+      "target": "css=.cart-item:nth-child(1) > .text-center > .blk-qty > .updateCart",
+      "targets": [
+        ["css=.cart-item:nth-child(1) > .text-center > .blk-qty > .updateCart", "css:finder"],
+        ["xpath=(//input[@value='3'])[2]", "xpath:attributes"],
+        ["xpath=//td[4]/div/input", "xpath:position"]
+      ],
+      "value": "3"
+    }, {
+      "id": "7accaa98-970b-4e30-bafd-8b37c2200cf9",
+      "comment": "",
+      "command": "check",
+      "target": "css=.cart-item:nth-child(1) > .text-center > .blk-qty > .updateCart",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ee38e849-4ddd-49a7-ba37-cdd576f2a928",
+      "comment": "",
+      "command": "click",
+      "target": "css=body",
+      "targets": [
+        ["css=body", "css:finder"],
+        ["xpath=//body", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9c85682f-77bf-467d-9dd9-b3f020880f19",
+      "comment": "",
+      "command": "pause",
+      "target": "2000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "89c6db43-079b-46c8-ad0d-f6d7e0b25c30",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "0c4a7f70-3fd4-4c0d-b8ec-25b11a8808c5",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["2c93e129-b7d0-497a-96ce-f66cc8936f49"]
+  }],
+  "urls": ["https://moji.vn/"],
+  "plugins": []
+}

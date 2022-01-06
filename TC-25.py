@@ -1,7 +1,6 @@
 import time
 
 from selenium import webdriver
-from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.common.by import By
 
 driver = webdriver.Chrome(executable_path='venv/chromedriver')
@@ -14,7 +13,6 @@ driver.find_element(By.NAME, 'username').send_keys('trangduong1501@gmail.com')
 driver.find_element(By.NAME, 'password').send_keys('ktpmim91')
 driver.find_element(By.CSS_SELECTOR, '#btnsignin').click()
 time.sleep(1)
-
 
 driver.find_element(By.CSS_SELECTOR, 'h3 a').click()
 driver.find_element(By.ID, 'addToCart').click()

@@ -1,49 +1,45 @@
 {
-  "id": "7687e402-e18a-4e12-9377-fbcc6fd61162",
+  "id": "5d3f90ee-f278-482d-bdd4-ea251d9de108",
   "version": "2.0",
-  "name": "TC-26",
+  "name": "TC-25",
   "url": "https://moji.vn/",
   "tests": [{
-    "id": "2c93e129-b7d0-497a-96ce-f66cc8936f49",
-    "name": "TC-26",
+    "id": "e2d5b3ab-6c6a-4174-b57c-01ee39a9e2ff",
+    "name": "TC-25",
     "commands": [{
-      "id": "f40f38bf-c9a9-449f-bbde-e538e37663d8",
+      "id": "d7382cb2-9de1-4a3f-91f4-613a6e3f410f",
       "comment": "",
       "command": "open",
       "target": "https://moji.vn/",
       "targets": [],
       "value": ""
     }, {
-      "id": "d50ab8be-9b24-4652-b0e0-29487dc6d4b3",
+      "id": "6e8a29ca-ac4b-46c1-a188-fa167723b4c4",
       "comment": "",
       "command": "setWindowSize",
       "target": "1382x744",
       "targets": [],
       "value": ""
     }, {
-      "id": "e3a17879-3d7f-41a2-9375-11e527fb6190",
+      "id": "878d0f72-257d-4611-95d7-b42a4415ab2e",
       "comment": "",
       "command": "click",
       "target": "css=.count-cart",
-      "targets": [
-        ["css=.shopping-cart-item:nth-child(1)", "css:finder"],
-        ["xpath=//div[@id='js-rs-mini-cart']/ul/li", "xpath:idRelative"],
-        ["xpath=//div[2]/ul/li", "xpath:position"]
-      ],
+      "targets": [],
       "value": ""
     }, {
-      "id": "fdae8034-5553-49e1-a476-a796ea4b5e0c",
+      "id": "4e1c7d91-53ba-4533-8db7-cf8b9f713336",
       "comment": "",
       "command": "click",
       "target": "css=.count-cart-icon",
       "targets": [
-        ["css=.shopping-cart-item:nth-child(1)", "css:finder"],
+        ["css=.shopping-cart-item", "css:finder"],
         ["xpath=//div[@id='js-rs-mini-cart']/ul/li", "xpath:idRelative"],
         ["xpath=//div[2]/ul/li", "xpath:position"]
       ],
       "value": ""
     }, {
-      "id": "156b9e1c-c799-4a2d-8ecf-8be73c800ab9",
+      "id": "c33cea02-ea98-43fe-bda9-cdc02d7afe2d",
       "comment": "",
       "command": "click",
       "target": "linkText=Xem giỏ hàng",
@@ -58,60 +54,102 @@
       ],
       "value": ""
     }, {
-      "id": "8cf8d233-faf2-4078-b130-32fb8078afd0",
+      "id": "7cf69189-2889-4df1-a702-a2155cf589d2",
       "comment": "",
       "command": "click",
-      "target": "css=.cart-item:nth-child(1) > .text-center > .blk-qty > .updateCart",
+      "target": "linkText=TẤT CẢ",
       "targets": [
-        ["css=.cart-item:nth-child(1) > .text-center > .blk-qty > .updateCart", "css:finder"],
-        ["xpath=(//input[@value='3'])[2]", "xpath:attributes"],
-        ["xpath=//td[4]/div/input", "xpath:position"]
+        ["linkText=TẤT CẢ", "linkText"],
+        ["css=.all > a", "css:finder"],
+        ["xpath=//a[contains(text(),'TẤT CẢ')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/product')]", "xpath:href"],
+        ["xpath=//div[2]/div/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'TẤT CẢ')]", "xpath:innerText"]
       ],
       "value": ""
     }, {
-      "id": "2a8d9310-b8da-4cda-9764-8443200ada52",
-      "comment": "",
-      "command": "pause",
-      "target": "2000",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "4478314f-c8b6-43e2-a42f-1c8ffb6fc91f",
-      "comment": "",
-      "command": "type",
-      "target": "css=.cart-item:nth-child(1) > .text-center > .blk-qty > .updateCart",
-      "targets": [
-        ["css=.cart-item:nth-child(1) > .text-center > .blk-qty > .updateCart", "css:finder"],
-        ["xpath=(//input[@value='3'])[2]", "xpath:attributes"],
-        ["xpath=//td[4]/div/input", "xpath:position"]
-      ],
-      "value": "3"
-    }, {
-      "id": "7accaa98-970b-4e30-bafd-8b37c2200cf9",
-      "comment": "",
-      "command": "check",
-      "target": "css=.cart-item:nth-child(1) > .text-center > .blk-qty > .updateCart",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "ee38e849-4ddd-49a7-ba37-cdd576f2a928",
+      "id": "8187f386-7287-47c4-bd5f-0b860ff123de",
       "comment": "",
       "command": "click",
-      "target": "css=body",
+      "target": "css=.item36748986 .lazyautosizes",
       "targets": [
-        ["css=body", "css:finder"],
-        ["xpath=//body", "xpath:position"]
+        ["css=.item36748986 .lazyautosizes", "css:finder"],
+        ["xpath=//img[@alt='Sổ vở MZHS Baby bear fruit avocado trái bơ hi! 17x24 200 trang']", "xpath:img"],
+        ["xpath=//div[4]/div/a/img", "xpath:position"]
       ],
       "value": ""
     }, {
-      "id": "9c85682f-77bf-467d-9dd9-b3f020880f19",
+      "id": "242ea265-544f-4708-95f2-c698bfd5a5a2",
+      "comment": "",
+      "command": "click",
+      "target": "id=addToCart",
+      "targets": [
+        ["id=addToCart", "id"],
+        ["css=#addToCart", "css:finder"],
+        ["xpath=//div[@id='addToCart']", "xpath:attributes"],
+        ["xpath=//div[4]/div[4]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e25b547c-a1fd-489d-98ea-9a12a6634c48",
       "comment": "",
       "command": "pause",
-      "target": "2000",
+      "target": "1000",
       "targets": [],
       "value": ""
     }, {
-      "id": "89c6db43-079b-46c8-ad0d-f6d7e0b25c30",
+      "id": "03114fc7-c5a8-498b-9c6c-628a8d3eac38",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.col-9 > p",
+      "targets": [],
+      "value": "Chúc mừng Bạn đã thêm thành công sản phẩm Sổ vở MZHS Baby bear fruit avocado trái bơ hi! 17x24 200 trang - Mix vào giỏ hàng!"
+    }, {
+      "id": "2c95d132-6cb0-4060-8c3f-1914e144eb45",
+      "comment": "",
+      "command": "click",
+      "target": "css=.close:nth-child(1) > span",
+      "targets": [
+        ["css=.close:nth-child(1) > span", "css:finder"],
+        ["xpath=//div[@id='modalAbandoned']/div/div/div[2]/button/span", "xpath:idRelative"],
+        ["xpath=//div[2]/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1661f1c7-4e56-4177-b7ff-d82c4238ac28",
+      "comment": "",
+      "command": "click",
+      "target": "css=.count-cart",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "04be63aa-1e93-46ce-a11e-b340da93fd35",
+      "comment": "",
+      "command": "click",
+      "target": "css=.count-cart-icon",
+      "targets": [
+        ["css=.shopping-cart-item:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='js-rs-mini-cart']/ul/li", "xpath:idRelative"],
+        ["xpath=//div[2]/ul/li", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "03f0141c-69b8-40a9-a584-68dc59bc046f",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Xem giỏ hàng",
+      "targets": [
+        ["linkText=Xem giỏ hàng", "linkText"],
+        ["css=.btn-lg", "css:finder"],
+        ["xpath=//a[contains(text(),'Xem giỏ hàng')]", "xpath:link"],
+        ["xpath=//div[@id='js-rs-mini-cart']/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/cart')]", "xpath:href"],
+        ["xpath=//div[2]/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Xem giỏ hàng')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "10ca3627-be10-4418-b7d9-c847fb5d2bba",
       "comment": "",
       "command": "close",
       "target": "",
@@ -120,12 +158,12 @@
     }]
   }],
   "suites": [{
-    "id": "0c4a7f70-3fd4-4c0d-b8ec-25b11a8808c5",
+    "id": "d0c0977a-1ced-4aef-8bdc-f149793eca93",
     "name": "Default Suite",
     "persistSession": false,
     "parallel": false,
     "timeout": 300,
-    "tests": ["2c93e129-b7d0-497a-96ce-f66cc8936f49"]
+    "tests": ["e2d5b3ab-6c6a-4174-b57c-01ee39a9e2ff"]
   }],
   "urls": ["https://moji.vn/"],
   "plugins": []
